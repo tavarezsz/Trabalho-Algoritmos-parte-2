@@ -3,7 +3,7 @@
 # Indíces Hash:
 Aplicamos uma indexação por hash no campo de data da tabela de pedidos. As colisões em data iguais são usadas para definir os buckets por lista encadeada, assim pode ser feito de forma muito eficiente uma consulta mostrando todos os pedido em uma data específica. Função de hash = (ano*31 + mes*31 + dia) % 96001(numero primo mais proximo do num de registros)
 
-#indice por arvore:
+# indice por arvore:
 O código implementa uma  Árvore B+, pois na B+ os nós internos ficam menores (sem dados), permitindo um grau maior (fan-out) e menos acessos à memória para encontrar a folha. Além disso, facilita a varredura sequencial."
 
 Ordem/Grau da Árvore:
